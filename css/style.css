@@ -1,4 +1,6 @@
 /* General Reset */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +9,7 @@
 
 /* Body Styling */
 body {
-  font-family: 'Georgia', serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #1c1c1c;
   color: #fff;
 }
@@ -53,7 +55,7 @@ header {
   background-color: #1c1c1c;
   color: #ffa500;
   border-bottom: 3px solid #b8860b;
-  font-family: 'Georgia', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Raid Container */
@@ -94,7 +96,7 @@ header {
   background-color: #333;
   color: #fff;
   font-size: 0.9rem;
-  font-family: 'Georgia', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .raid-box:hover {
