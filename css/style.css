@@ -1,6 +1,7 @@
-/* Import fantasy-style font for headers */
+/* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Merriweather&display=swap');
 
+/* Background and overall page */
 body {
   background: url('https://www.transparenttextures.com/patterns/cream-paper.png') repeat;
   color: #e0d8b0;
@@ -10,12 +11,34 @@ body {
   font-size: 16px;
 }
 
-header, h1, h2, h3 {
-  font-family: 'Cinzel', serif;
+/* Layout box for main content */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #1a1a1a;
+  border: 2px solid #444;
+  box-shadow: 0 0 10px #000;
+  border-radius: 8px;
 }
 
+/* Header styles */
+header {
+  background-color: #2a1a0f;
+  color: #ffd700;
+  text-align: center;
+  padding: 1.5rem 1rem 1rem;
+  font-family: 'Cinzel', serif;
+  border-bottom: 4px solid #b8860b;
+}
 
-/* Navigation */
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+/* Navigation menu */
 nav ul {
   list-style: none;
   padding: 0;
@@ -40,12 +63,13 @@ nav .current {
   cursor: default;
 }
 
-/* Section headers */
+/* Headings */
 h2, h3 {
   color: #ffcc66;
-  font-family: 'Uncial Antiqua', cursive;
+  font-family: 'Cinzel', serif;
   border-bottom: 1px solid #555;
   padding-bottom: 4px;
+  margin-top: 2rem;
 }
 
 /* Links */
