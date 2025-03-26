@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans&display=swap');
+
+body {
+  background-color: #1c1c1c;
+  color: #f0f0f0;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+main {
+  max-width: 880px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #2a2a2a;
+  border: 1px solid #555;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+header {
+  background-color: #101010;
+  color: #ffa500;
+  text-align: center;
+  padding: 1.5rem;
+  font-family: 'Libre Baskerville', serif;
+  border-bottom: 3px solid #b8860b;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+nav a,
+nav .current {
+  color: #ffa500;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav .current {
+  border-bottom: 2px solid #ffa500;
+  cursor: default;
+}
+
+h2, h3 {
+  font-family: 'Libre Baskerville', serif;
+  color: #ffcc66;
+  margin-top: 2rem;
+  border-bottom: 1px solid #555;
+  padding-bottom: 4px;
+}
+
+a {
+  color: #ffdf6c;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #101010;
+  color: #999;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  border-top: 2px solid #b8860b;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.raid-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.raid-item {
+  text-decoration: none;
+  color: inherit;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.raid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.raid-item h2 {
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+}
+
+.raid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
