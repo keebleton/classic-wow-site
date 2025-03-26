@@ -1,42 +1,19 @@
 /* Import fantasy-style font for headers */
-@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Merriweather&display=swap');
 
-/* Page background */
 body {
   background: url('https://www.transparenttextures.com/patterns/cream-paper.png') repeat;
   color: #e0d8b0;
-  font-family: Verdana, sans-serif;
+  font-family: 'Merriweather', serif;
   margin: 0;
   padding: 0;
   font-size: 16px;
 }
 
-/* Main site container */
-main {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background-color: #1a1a1a;
-  border: 2px solid #444;
-  box-shadow: 0 0 10px #000;
-  border-radius: 8px;
+header, h1, h2, h3 {
+  font-family: 'Cinzel', serif;
 }
 
-/* Header styles */
-header {
-  background-color: #2a1a0f;
-  color: #ffd700;
-  text-align: center;
-  padding: 1rem;
-  font-family: 'Uncial Antiqua', cursive;
-  border-bottom: 4px solid #b8860b;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-  letter-spacing: 1px;
-}
 
 /* Navigation */
 nav ul {
