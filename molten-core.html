@@ -50,15 +50,19 @@
       border: 1px solid #555;
     }
     .entry-content {
-      display: none;
-      padding: 0 1.5rem 1rem;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+      padding: 0 1.5rem;
     }
     .entry-content ul {
       list-style: disc;
       padding-left: 1.5rem;
+      margin: 1rem 0;
     }
     .entry.open .entry-content {
-      display: block;
+      max-height: 500px;
+      padding-bottom: 1rem;
     }
   </style>
   <script>
@@ -66,7 +70,7 @@
       const entry = element.closest('.entry');
       entry.classList.toggle('open');
     }
-  </script>
+</script>
 </head>
 <body>
   <header>
@@ -92,8 +96,13 @@
             <h3>Lucifron</h3>
           </div>
           <div class="entry-content">
-            <ul><li>Placeholder ability</li></ul>
-          </div>
+  <ul>
+    <li><strong>Lucifron's Curse</strong> – Increases the cost of all spells and abilities by 100% for 5 minutes. Magic debuff.</li>
+    <li><strong>Impending Doom</strong> – Deals Shadow damage after 10 seconds. Magic debuff.</li>
+    <li><strong>Shadow Shock</strong> – Deals Shadow damage to all nearby enemies.</li>
+    <li><strong>Summon Flamewaker Protector</strong> – Two Flamewaker Protectors spawn and must be tanked separately.</li>
+  </ul>
+</div>
         </div>
         <div class="entry">
           <div class="entry-header" onclick="toggleEntry(this)">
@@ -227,7 +236,7 @@
         </div>
         <div class="entry">
           <div class="entry-header" onclick="toggleEntry(this)">
-            <img src="images/molten core/lava-surger.jpg" alt="Lava Surger">
+            <img src="images/molten core/lava-surger.png" alt="Lava Surger">
             <h3>Lava Surger</h3>
           </div>
           <div class="entry-content">
