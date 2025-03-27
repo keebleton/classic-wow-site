@@ -60,10 +60,22 @@
       list-style: disc;
       padding-left: 1.5rem;
       margin: 1rem 0;
-      color: #fff;
+      color: #ffa500;
     }
     .entry-content strong {
       color: #ffa500;
+    }
+      @media (max-width: 768px) {
+      .content-columns {
+        grid-template-columns: 1fr;
+      }
+      .entry-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .entry-header img {
+        margin-bottom: 0.5rem;
+      }
     }
   </style>
   <script>
@@ -86,6 +98,26 @@
         });
         entry.classList.add('open');
       }
+    }
+      function expandAll(open) {
+      const entries = document.querySelectorAll('.entry');
+      entries.forEach(entry => {
+        const content = entry.querySelector('.entry-content');
+        if (open && !entry.classList.contains('open')) {
+          content.style.height = content.scrollHeight + 'px';
+          content.addEventListener('transitionend', function handler() {
+            content.style.height = 'auto';
+            content.removeEventListener('transitionend', handler);
+          });
+          entry.classList.add('open');
+        } else if (!open && entry.classList.contains('open')) {
+          content.style.height = content.scrollHeight + 'px';
+          requestAnimationFrame(() => {
+            content.style.height = '0px';
+            entry.classList.remove('open');
+          });
+        }
+      });
     }
   </script>
 </head>
@@ -343,6 +375,10 @@
           </div>
         </div>
       </div>
+    </div>
+      <div style="text-align: center; margin: 1rem auto;">
+      <button onclick="expandAll(true)" style="margin-right: 1rem; padding: 0.5rem 1rem; background-color: #444; color: #ffa500; border: none; border-radius: 4px; cursor: pointer;">Expand All</button>
+      <button onclick="expandAll(false)" style="padding: 0.5rem 1rem; background-color: #444; color: #ffa500; border: none; border-radius: 4px; cursor: pointer;">Collapse All</button>
     </div>
   </main>
 </body>
