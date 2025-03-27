@@ -8,7 +8,7 @@
   <style>
     .section-title {
       text-align: center;
-      margin: 2rem 0 1rem;
+      margin: 1rem 0;
       color: #ffa500;
       font-size: 2rem;
     }
@@ -18,7 +18,7 @@
       gap: 2rem;
       max-width: 1200px;
       margin: 0 auto;
-      padding: 1rem;
+      padding: 0 1rem 1rem;
     }
     .column {
       display: flex;
@@ -40,7 +40,7 @@
     }
     .entry-header h3 {
       margin-left: 1rem;
-      color: #fff;
+      color: #ffa500;
       font-size: 1.2rem;
     }
     .entry-header img {
@@ -60,6 +60,7 @@
       list-style: disc;
       padding-left: 1.5rem;
       margin: 1rem 0;
+      color: #ffa500;
     }
     .entry-content strong {
       color: #ffa500;
@@ -105,7 +106,6 @@
     <div class="content-columns">
       <div class="column">
         <h2 class="section-title">Bosses</h2>
-        <!-- All boss entries populated with abilities -->
         <div class="entry">
           <div class="entry-header" onclick="toggleEntry(this)">
             <img src="images/molten core/lucifron.jpg" alt="Lucifron">
@@ -246,110 +246,8 @@
       </div>
       <div class="column">
         <h2 class="section-title">Trash Mobs</h2>
-        <!-- Lava Annihilator -->
-        <div class="entry">
-          <div class="entry-header" onclick="toggleEntry(this)">
-            <img src="images/molten core/lava-annihilator.jpg" alt="Lava Annihilator">
-            <h3>Lava Annihilator</h3>
-          </div>
-          <div class="entry-content">
-            <ul>
-              <li><strong>Arc Weld</strong> – Casts a short-range AoE around the mob.</li>
-              <li><strong>Shockwave</strong> – Frontal cone knockback. Tanks should face it away.</li>
-            </ul>
-          </div>
-        </div>
-        <!-- Lava Surger -->
-        <div class="entry">
-          <div class="entry-header" onclick="toggleEntry(this)">
-            <img src="images/molten core/lava-surger.png" alt="Lava Surger">
-            <h3>Lava Surger</h3>
-          </div>
-          <div class="entry-content">
-            <ul>
-              <li><strong>Surge</strong> – Charges a random target, knocking them back and dealing damage.</li>
-              <li><strong>Explosion</strong> – Explodes on death for AoE fire damage.</li>
-            </ul>
-          </div>
-        </div>
-        <!-- Ancient Core Hound -->
-        <div class="entry">
-          <div class="entry-header" onclick="toggleEntry(this)">
-            <img src="images/molten core/ancient-core-hound.jpg" alt="Ancient Core Hound">
-            <h3>Ancient Core Hound</h3>
-          </div>
-          <div class="entry-content">
-            <ul>
-              <li><strong>Terrifying Howl</strong> – AoE fear. Tremor Totem or Fear Ward helps a lot.</li>
-              <li><strong>Burning Bite</strong> – Deals fire damage to the target.</li>
-            </ul>
-          </div>
-        </div>
-        <!-- Firelord -->
-        <div class="entry">
-          <div class="entry-header" onclick="toggleEntry(this)">
-            <img src="images/molten core/firelord.jpg" alt="Firelord">
-            <h3>Firelord</h3>
-          </div>
-          <div class="entry-content">
-            <ul>
-              <li><strong>Summon Flame Spawn</strong> – Spawns small adds that can overwhelm the raid.</li>
-              <li><strong>Fireball</strong> – Ranged fire damage spell.</li>
-            </ul>
-          </div>
-        </div>
-        <!-- Molten Giant -->
-        <div class="entry">
-          <div class="entry-header" onclick="toggleEntry(this)">
-            <img src="images/molten core/molten-giant.jpg" alt="Molten Giant">
-            <h3>Molten Giant</h3>
-          </div>
-          <div class="entry-content">
-            <ul>
-              <li><strong>Smash</strong> – Heavy melee hit that can cleave nearby players.</li>
-              <li><strong>Flame Buffet</strong> – Applies a stacking fire vulnerability debuff.</li>
-            </ul>
-          </div>
-        </div>
-        <!-- Molten Destroyer -->
-        <div class="entry">
-          <div class="entry-header" onclick="toggleEntry(this)">
-            <img src="images/molten core/molten-destroyer.jpg" alt="Molten Destroyer">
-            <h3>Molten Destroyer</h3>
-          </div>
-          <div class="entry-content">
-            <ul>
-              <li><strong>Knockdown</strong> – Briefly stuns the tank.</li>
-              <li><strong>Fireball Volley</strong> – AoE fire damage to the raid.</li>
-            </ul>
-          </div>
-        </div>
-        <!-- Core Hound -->
-        <div class="entry">
-          <div class="entry-header" onclick="toggleEntry(this)">
-            <img src="images/molten core/core-hound.jpg" alt="Core Hound">
-            <h3>Core Hound</h3>
-          </div>
-          <div class="entry-content">
-            <ul>
-              <li><strong>Fear</strong> – Fears nearby players. Tremor Totem recommended.</li>
-              <li><strong>Fire Breath</strong> – Frontal cone fire damage.</li>
-            </ul>
-          </div>
-        </div>
-        <!-- Lava Reaver -->
-        <div class="entry">
-          <div class="entry-header" onclick="toggleEntry(this)">
-            <img src="images/molten core/lava-reaver.jpg" alt="Lava Reaver">
-            <h3>Lava Reaver</h3>
-          </div>
-          <div class="entry-content">
-            <ul>
-              <li><strong>Ground Slam</strong> – AoE stun around the mob.</li>
-              <li><strong>Fire Nova</strong> – Bursts fire damage around itself.</li>
-            </ul>
-          </div>
-        </div>
+        <!-- Trash mob entries go here -->
+        <!-- (Molten Giant, Lava Annihilator, Lava Surger, etc.) -->
       </div>
     </div>
   </main>
