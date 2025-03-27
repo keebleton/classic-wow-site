@@ -51,9 +51,9 @@
       border: 1px solid #555;
     }
     .entry-content {
-      max-height: 0;
+      height: 0;
       overflow: hidden;
-      transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+      transition: height 0.3s ease;
       padding: 0 1.5rem;
     }
     .entry-content ul {
@@ -61,15 +61,27 @@
       padding-left: 1.5rem;
       margin: 1rem 0;
     }
-    .entry.open .entry-content {
-      max-height: 500px;
-      padding-bottom: 1rem;
-    }
   </style>
   <script>
     function toggleEntry(element) {
       const entry = element.closest('.entry');
-      entry.classList.toggle('open');
+      const content = entry.querySelector('.entry-content');
+      const isOpen = entry.classList.contains('open');
+
+      if (isOpen) {
+        content.style.height = content.scrollHeight + 'px';
+        requestAnimationFrame(() => {
+          content.style.height = '0px';
+          entry.classList.remove('open');
+        });
+      } else {
+        content.style.height = content.scrollHeight + 'px';
+        content.addEventListener('transitionend', function handler() {
+          content.style.height = 'auto';
+          content.removeEventListener('transitionend', handler);
+        });
+        entry.classList.add('open');
+      }
     }
 </script>
 </head>
