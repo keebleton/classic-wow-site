@@ -50,10 +50,12 @@
       border: 1px solid #555;
     }
     .entry-content {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 0.3s ease, padding 0.3s ease;
       padding: 0 1.5rem;
+      height: auto;
+      overflow: hidden;
     }
     .entry-content ul {
       list-style: disc;
@@ -61,7 +63,7 @@
       margin: 1rem 0;
     }
     .entry.open .entry-content {
-      max-height: 500px;
+      transform: scaleY(1);
       padding-bottom: 1rem;
     }
   </style>
